@@ -4,12 +4,17 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.apache.log4j.BasicConfigurator;  
+import org.apache.log4j.LogManager;  
+import org.apache.log4j.Logger;
+
 
 public class LoginPage extends BasePage {
-
+	private static final Logger logger = LogManager.getLogger(LoginPage.class);
+    
     /* APP Base URL */
     final static String loginUrl = "https://www.amazon.com/";
-
+    
     /* Element Locators */
     By Account = By.xpath("//*[@id=\"nav-search-submit-button\"]"); 
     By Search  = By.xpath("//*[@id='twotabsearchtextbox']");
@@ -29,7 +34,9 @@ public class LoginPage extends BasePage {
      */
     
     public LoginPage goTo() {
-        webDriver.get(loginUrl);
+    
+    	logger.info("Inside login page method");
+    	webDriver.get(loginUrl);
         return new LoginPage(webDriver);
     }
 
@@ -37,6 +44,7 @@ public class LoginPage extends BasePage {
     
     
     public void Account() {
+    	logger.info("Inside Account method");
     	Actions At= new Actions(webDriver);
     	At.clickAndHold(webDriver.findElement(Account)).build().perform();
     	System.out.println(Account);
@@ -45,6 +53,7 @@ public class LoginPage extends BasePage {
   
     
     public void Search() {
+    	logger.info("Inside search page method");
     	webDriver.findElement(Search).sendKeys("keychain");      
     }
 }
