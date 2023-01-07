@@ -24,6 +24,7 @@ public class LoginTest extends BaseTest
 		//logger.info("Inside Account method");
         LoginPage loginPage = new LoginPage(getWebDriver());
         loginPage.Account();
+        System.out.println("Inside Account Method");
         //logger.info("Exiting Account method");
     }
 
