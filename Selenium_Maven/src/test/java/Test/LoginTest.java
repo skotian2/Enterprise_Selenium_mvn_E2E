@@ -17,15 +17,26 @@ public class LoginTest extends BaseTest
 {
 	//private static final Logger logger = LogManager.getLogger(LoginTest.class);
 
-	@Test
-   public  static void Account() {
+	@Test(priority=2)
+  	public  static void Account() {
 	   
 		//BasicConfigurator.configure();  
 		//logger.info("Inside Account method");
         LoginPage loginPage = new LoginPage(getWebDriver());
         loginPage.Account();
         System.out.println("Inside Account Method");
+        System.out.println("Git commit done");
         //logger.info("Exiting Account method");
     }
 
+	@Test(priority=1)
+  	public  static void AccountSearch() {
+	   
+		LoginPage loginPage = new LoginPage(getWebDriver());
+		loginPage.Search();
+    }
+
+	
+	
+	
 }
