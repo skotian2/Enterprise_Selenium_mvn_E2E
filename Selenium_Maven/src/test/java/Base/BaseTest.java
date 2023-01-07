@@ -31,6 +31,7 @@ public class BaseTest {
     @AfterClass
     public static void closeBrowser(){
         webDriver.quit();
+        System.out.println("Exiting browser method");
         //logger.info("Closing Browser ...........");
     }
 
