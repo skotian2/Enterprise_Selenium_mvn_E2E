@@ -18,6 +18,8 @@ public class LoginPage extends BasePage {
     /* Element Locators */
     By Account = By.xpath("//*[@id=\"nav-search-submit-button\"]"); 
     By Search  = By.xpath("//*[@id='twotabsearchtextbox']");
+    By AccountClick = By.xpath("//*[@id='nav-link-accountList']");
+    		
     /**
      * Login Page constructor
      *
@@ -55,5 +57,10 @@ public class LoginPage extends BasePage {
     public void Search() {
     	logger.info("Inside search page method");
     	webDriver.findElement(Search).sendKeys("keychain");      
+    }
+    
+    public void AccountClick() {
+    	logger.info("Inside search page method");
+    	webDriver.findElement(AccountClick).click();     
     }
 }

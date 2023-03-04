@@ -43,6 +43,16 @@ public class LoginTest extends BaseTest
 		logger.info("Inside Account Verify Method");
     }
 	
+
+	@Test(priority=3)
+  	public  static void AccountClick() {
+		logger.info("Inside AccountClick Method");
+		LoginPage loginPage = new LoginPage(getWebDriver());
+		loginPage.AccountClick();
+		logger.info("Exit Account Click method");
+		
+    }
+	
 	
 	
 }
