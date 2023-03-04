@@ -38,6 +38,10 @@ public class LoginTest extends BaseTest
 		logger.info("Exiting AccountSearch method");
     }
 
+	@Test(priority=2)
+  	public  static void AccountVerify() {
+		logger.info("Inside Account Verify Method");
+    }
 	
 	
 	
