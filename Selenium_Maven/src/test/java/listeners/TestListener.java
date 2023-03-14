@@ -19,16 +19,18 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
+    	
+        
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        Object testClass = result.getInstance();
-        WebDriver driver = ((BaseTest) testClass).getDriver();
+        Object testClassFailure = result.getInstance();
+        WebDriver driver = ((BaseTest) testClassFailure).getDriver();
         if (driver instanceof WebDriver) {
             String testName = getTestMethodName(result).split("(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])").toString();
             System.out.println("Screenshot captured for test case:" + testName);
-            Screenshot.takeSnapShot(driver, "screenshots/failed/" + getTestMethodName(result));
+            Screenshot.takeSnapShot(driver, "screenshots/Pass/" + getTestMethodName(result));
         }
     }
 
