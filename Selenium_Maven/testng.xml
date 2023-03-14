@@ -2,8 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression E2E Suit" >
     <test name="LoginTest">
+    <parameter name="browser" value="Chrome"></parameter>
+    <groups>
+	    <run>
+	     <!--   <exclude name="TEST"></exclude>
+	        <include name="PROD"></include> -->
+	    </run> 
+    </groups>
         <classes>
             <class name="Test.LoginTest"/>
+            <class name="Test.LoginVerify"/>
         </classes>
     </test>
 </suite>

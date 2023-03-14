@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-07T17:11:03 CST" name="Default suite" finished-at="2023-01-07T17:11:08 CST" duration-ms="5046">
+  <suite started-at="2023-03-14T15:40:35 CDT" name="Regression E2E Suit" finished-at="2023-03-14T15:40:41 CDT" duration-ms="6095">
     <groups>
+      <group name="PROD">
+        <method signature="LoginTest.Account()[pri:0, instance:Test.LoginTest@74751b3]" name="Account" class="Test.LoginTest"/>
+        <method signature="LoginTest.AccountSearch()[pri:0, instance:Test.LoginTest@74751b3]" name="AccountSearch" class="Test.LoginTest"/>
+      </group> <!-- PROD -->
     </groups>
-    <test started-at="2023-01-07T17:11:03 CST" name="Default test" finished-at="2023-01-07T17:11:08 CST" duration-ms="5046">
+    <test started-at="2023-03-14T15:40:35 CDT" name="LoginTest" finished-at="2023-03-14T15:40:41 CDT" duration-ms="6095">
+      <class name="Test.LoginVerify">
+        <test-method signature="LoginVerifyAccount()[pri:1, instance:Test.LoginVerify@6392827e]" started-at="2023-03-14T15:40:41 CDT" name="LoginVerifyAccount" finished-at="2023-03-14T15:40:41 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerifyAccount -->
+        <test-method signature="LoginVerifyAccountSearch()[pri:2, instance:Test.LoginVerify@6392827e]" started-at="2023-03-14T15:40:41 CDT" name="LoginVerifyAccountSearch" finished-at="2023-03-14T15:40:41 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerifyAccountSearch -->
+        <test-method signature="LoginVerifyAccountVerify()[pri:3, instance:Test.LoginVerify@6392827e]" started-at="2023-03-14T15:40:41 CDT" name="LoginVerifyAccountVerify" finished-at="2023-03-14T15:40:41 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerifyAccountVerify -->
+        <test-method signature="LoginVerifyAccountClick()[pri:4, instance:Test.LoginVerify@6392827e]" started-at="2023-03-14T15:40:41 CDT" name="LoginVerifyAccountClick" finished-at="2023-03-14T15:40:41 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginVerifyAccountClick -->
+      </class> <!-- Test.LoginVerify -->
       <class name="Test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.LoginTest@4a7f959b]" started-at="2023-01-07T17:11:03 CST" name="setUp" finished-at="2023-01-07T17:11:07 CST" duration-ms="4046" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:35 CDT" name="setUp" finished-at="2023-03-14T15:40:39 CDT" duration-ms="4300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Account()[pri:0, instance:Test.LoginTest@4a7f959b]" started-at="2023-01-07T17:11:07 CST" name="Account" finished-at="2023-01-07T17:11:07 CST" duration-ms="281" status="PASS">
+        <test-method signature="Account()[pri:0, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:39 CDT" name="Account" finished-at="2023-03-14T15:40:39 CDT" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.LoginTest@4a7f959b]" started-at="2023-01-07T17:11:07 CST" name="closeBrowser" finished-at="2023-01-07T17:11:08 CST" duration-ms="688" status="PASS">
+        <test-method signature="AccountSearch()[pri:0, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:39 CDT" name="AccountSearch" finished-at="2023-03-14T15:40:39 CDT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountSearch -->
+        <test-method signature="AccountVerify()[pri:2, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:39 CDT" name="AccountVerify" finished-at="2023-03-14T15:40:39 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountVerify -->
+        <test-method signature="AccountClick()[pri:3, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:39 CDT" name="AccountClick" finished-at="2023-03-14T15:40:40 CDT" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountClick -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Test.LoginTest@74751b3]" started-at="2023-03-14T15:40:40 CDT" name="closeBrowser" finished-at="2023-03-14T15:40:41 CDT" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Test.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Regression E2E Suit -->
 </testng-results>

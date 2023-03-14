@@ -19,8 +19,8 @@ import org.apache.log4j.Logger;
 public class LoginTest extends BaseTest 
 {
 	private static final Logger logger = LogManager.getLogger(LoginTest.class);
-
-	@Test(priority=2)
+	@Test (groups = { "PROD" })
+	//@Test(priority=2)
   	public  static void Account() {
 	   
 		BasicConfigurator.configure();  
@@ -29,8 +29,8 @@ public class LoginTest extends BaseTest
         loginPage.Account();
         logger.info("Exiting Account method");
     }
-
-	@Test(priority=1)
+    
+	@Test (groups = { "PROD" })
   	public  static void AccountSearch() {
 		logger.info("Inside AccountSearch method");
 		LoginPage loginPage = new LoginPage(getWebDriver());

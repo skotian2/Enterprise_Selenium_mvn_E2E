@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Regression E2E Suit]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="LoginTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="PROD"/>
+        <exclude name="TEST"/>
+      </run>
+    </groups>
     <classes>
       <class name="Test.LoginTest">
         <methods>
-          <include name="testLoginWithValidCredentials"/>
-          <include name="closeBrowser"/>
-          <include name="testLoginWithInvalidUsername"/>
-          <include name="testLoginWithoutPassword"/>
-          <include name="testLoginWithoutUsername"/>
-          <include name="testLoginWithInvalidPassword"/>
-          <include name="setUp"/>
+          <include name="AccountSearch"/>
+          <include name="Account"/>
         </methods>
       </class> <!-- Test.LoginTest -->
     </classes>
