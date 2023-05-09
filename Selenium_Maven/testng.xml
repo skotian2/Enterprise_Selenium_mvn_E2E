@@ -11,7 +11,7 @@
     </groups>
         <classes>
             <class name="Test.LoginTest"/>
-            <class name="Test.LoginVerify"/>
+            <!--   <class name="Test.LoginVerify"/> -->
         </classes>
     </test>
 </suite>

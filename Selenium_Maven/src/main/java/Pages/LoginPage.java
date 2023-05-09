@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     By Account = By.xpath("//*[@id=\"nav-search-submit-button\"]"); 
     By Search  = By.xpath("//*[@id='twotabsearchtextbox']");
     By AccountClick = By.xpath("//*[@id='nav-link-accountList']");
-    		
+    By Sigin = By.xpath("//*[@id='nav-link-accountList']");	
     /**
      * Login Page constructor
      *
