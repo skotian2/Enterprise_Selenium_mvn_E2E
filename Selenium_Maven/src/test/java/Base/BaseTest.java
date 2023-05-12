@@ -29,7 +29,7 @@ public class BaseTest {
     	logger.info("Inside setup method - Setting up chromedriver");
         System.setProperty("webdriver.chrome.driver","C:\\Sandeep_Work\\QAAutomation\\Enterprise_Selenium_mvn_E2E\\Selenium_Maven\\resources\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--incognito");
+        options.addArguments("--incognito");
         webDriver = new ChromeDriver(options);
         webDriver.get(baseUrl);
         logger.info("Launching base url"+baseUrl);
