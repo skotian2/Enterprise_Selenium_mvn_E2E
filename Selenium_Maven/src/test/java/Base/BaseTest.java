@@ -34,6 +34,7 @@ public class BaseTest {
         webDriver.get(baseUrl);
         logger.info("Launching base url"+baseUrl);
         webDriver.manage().window().maximize();
+        logger.info("Exiting setup method");
     }
 
     @AfterClass
