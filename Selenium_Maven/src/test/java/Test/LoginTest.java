@@ -38,7 +38,6 @@ public class LoginTest extends BaseTest
   	public  static void AccountVerify()
 	{
 		logger.info("Inside Account Verify Method");
-		logger.info("Exiting Account AccountVerify Method");
-		logger.info("Exiting Account AccountVerify Method");
+		
     }
 }
