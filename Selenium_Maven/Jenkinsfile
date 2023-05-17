@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+    C:\Sandeep_Work\QAAutomation\CICD\apache-maven-3.9.2-bin\apache-maven-3.9.2\bin
+    }
  
     stages {
         stage('Build') {
