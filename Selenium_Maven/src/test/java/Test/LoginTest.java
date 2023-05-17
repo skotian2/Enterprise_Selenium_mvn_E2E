@@ -40,4 +40,15 @@ public class LoginTest extends BaseTest
 		logger.info("Inside Account Verify Method");
 		
     }
+	
+	
+	@Test(priority=2)
+  	public  static void AccountConfirmation()
+	{
+		logger.info("Inside AccountConfirmation Method");
+		
+    }
+	
+	
+	
 }
