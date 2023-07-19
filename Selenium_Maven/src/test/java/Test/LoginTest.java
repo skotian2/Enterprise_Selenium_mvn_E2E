@@ -37,7 +37,7 @@ public class LoginTest extends BaseTest
 	@Test(priority=1)
   	public  static void AccountVerify()
 	{
-		logger.info("Inside Account Verify Method");
+		logger.info("Inside Account Verify Method data");
 		
     }
 	
